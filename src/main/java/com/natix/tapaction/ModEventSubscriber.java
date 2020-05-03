@@ -1,6 +1,8 @@
 package com.natix.tapaction;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,7 +14,7 @@ public class ModEventSubscriber {
     @SubscribeEvent
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                setup(new Item(new Item.Properties()), "action-board")
+                setup(new Item(new Item.Properties().maxStackSize(32).group(ItemGroup.TOOLS)), "tap_action_item")
         );
     }
 

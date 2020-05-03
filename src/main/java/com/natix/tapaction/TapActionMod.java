@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod(TapActionMod.MOD_ID)
 public class TapActionMod {
 
-    public static final String MOD_ID = "tapaction";
+    public static final String MOD_ID = "tap_action_mod";
 }
 
 

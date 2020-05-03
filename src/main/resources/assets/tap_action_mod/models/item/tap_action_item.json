@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tap_action_mod:item/tap_action_item"
+  }
+}
